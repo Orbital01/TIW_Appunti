@@ -1,0 +1,72 @@
+<!-- lezione di riferimento https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML -->
+
+<!-- HTML é un linguaggio di markup che dice al browser come strutturare una pagina web
+é caratterizzato da tag che indicano al browser come visualizzare il contenuto della pagina -->
+
+ my cat is very grumpy
+<!-- se vogliamo del testo, specifichiamo che é un paragrafo usando il tag <p> </p> -->
+<p>my cat is very grumpy</p>
+<!-- il tag <p> é un tag di apertura e </p> é un tag di chiusura -->
+
+<!-- N.B HTML non é case sensitive, ma é buona pratica usare il lowercase -->
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- NESTING ELEMENTS -->
+<!-- possiamo annidare elementi HTML, ovvero mettere un elemento dentro un altro elemento -->
+<p>My cat is <strong>very</strong> grumpy.</p>
+<!-- i tag devono essere chiusi nell'ordine in cui sono stati aperti -->\
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- VOID ELEMENTS -->
+<!-- alcuni elementi non hanno bisogno di essere chiusi, sono chiamati void elements -->
+<!-- solitamente si usa per embeddare contenuti -->
+<img src="images/firefox-icon.png" alt="My test image">
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- ATTRIBUTES -->
+<!-- gli attributi forniscono informazioni aggiuntive su un elemento -->
+<!-- gli attributi sono specificati nel tag di apertura -->
+<!-- gli attributi hanno un nome e un valore -->
+<!-- il nome é sempre scritto in minuscolo -->
+<!-- il valore é sempre racchiuso tra virgolette -->
+<p class="editor-note">My cat is very grumpy.</p>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Boolean attributes -->
+<!-- alcuni attributi non hanno bisogno di un valore, sono chiamati boolean attributes -->
+<!-- se un attributo é presente, il suo valore é true, altrimenti é false -->
+
+<!-- esempio -->
+<input type="checkbox" checked>
+<!-- in questo caso cosa significa checked? significa che la checkbox é selezionata -->
+<!-- altrimeni checked non é presente -->
+
+<!-- altro esempio -->
+<!-- using the disabled attribute prevents the end user from entering text into the input box -->
+<input type="text" disabled />
+
+<!-- text input is allowed, as it doesn't contain the disabled attribute -->
+<input type="text" />
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!-- Omettere le virgolette negli attributi -->
+<!-- in HTML5 é possibile omettere le virgolette nei valori degli attributi -->
+<!-- ma é buona pratica usarle -->
+
+<!-- esempio -->
+<a href=https://www.mozilla.org/>favorite website</a>
+<a> <!-- é una ancora, le ancore racchiudono del testo e lo convertono in un link -->
+  href="https://www.mozilla.org/">favorite website</a>
+<!-- href é un attributo che indica la destinazione del link -->
+
+<!-- non sempre funziona -->
+<a href=https://www.mozilla.org/ title=The Mozilla homepage>favorite website</a>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
