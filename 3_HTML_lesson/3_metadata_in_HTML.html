@@ -1,0 +1,73 @@
+<!-- link to the page: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML-->
+<!-- in questa lezione vedremo cos'è contenuto all'interno del tag <head> -->
+<!-- all'interno di head mettiamo diverse cose come il titolo della pagina, il collegamento a fogli di stile, script, ecc. -->
+<!-- inoltre possiamo mettere anche dei metadati, ovvero informazioni sulla pagina stessa -->
+
+
+<!-- title -->
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+</head>
+<!-- Title non è da confondere con l'elemento h1, h2, ecc. -->
+<!-- Title è il titolo della pagina, che appare nella barra del browser -->
+<!-- Title è anche importante per i motori di ricerca, perchè è il titolo che appare nei risultati di ricerca -->
+<!-- title è anche quella voce che appare quando si aggiunge la pagina ai preferiti -->
+<body>
+    <h1>My test page</h1>
+    <p>This is my page</p>
+</body>
+</html>
+
+<!-- meta element -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+    <meta name="description" content="This is my test page" />
+    <meta name="author" content="Me" />
+    <!-- charset è il set di caratteri che la pagina utilizza -->
+    <!-- name è il tipo di metadato -->
+    <!-- content è il contenuto del metadato -->
+
+    <!-- description è una breve descrizione della pagina -->
+    <!-- author è l'autore della pagina -->
+</head>
+<body>
+    <h1>My test page</h1>
+    <p>This is my page</p>
+</body>
+</html>
+
+<!-- esistono altri tipi di metadata -->
+<!-- open graph è un protocollo metadata sviluppato da facebook -->
+<meta property="og:image"
+      content="https://developer.mozilla.org/mdn-social-share.png"
+/>
+<!-- questo metadato è un'immagine che rappresenta la pagina quando la condivido su facebook-->
+<!-- ------------------------ -->
+
+<!-- aggiungere una icona a sito o favicon-->
+<!-- prima di aggiungerla alla pagina, va messa nella stessa pagina dell'indice del sito
+in un formato .ico .gif o .png-->
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<!-- in rel definisco per quale scopo/dispositivo è l'icona -->
+<!-- type definisce il tipo di file -->
+
+<!-- ------------------------ -->
+
+<!-- aggiungere un foglio di stile o uno script JavaScript -->
+<!-- devo aggiungere i tag link o script all'interno del tag head-->
+
+<link rel="stylesheet" href="my-css-file.css" />
+<!-- rel definisce il tipo di file -->
+
+<script src="my-js-file.js" defer></script>
+<!-- defer fa in modo che lo script venga eseguito dopo che la pagina è stata caricata -->
+
+
+
